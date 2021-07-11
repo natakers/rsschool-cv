@@ -4,7 +4,7 @@
 Kersnovskaia Natalia
 
 ## Сontacts
-mail n.kersnovskaia@gmail.com
+Mail: n.kersnovskaia@gmail.com
 
 ## Information
 

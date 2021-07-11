@@ -36,7 +36,7 @@ But I always liked to study, to learn new things. I started to study layout, Jav
 
 ## Education
 
-Higher education "Automation of technological processes and production"
+Higher education "Automation of technological processes and production"  
 Higher education "Anti-crisis management"
 
 ## Level of English

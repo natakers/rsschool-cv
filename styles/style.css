@@ -63,9 +63,13 @@ main {
     padding-left: 50px;
     line-height: 20px;
     display: inline-block;
+    padding-left: 0;
+}
+.mail-ul {
+	padding: 0px;
 }
 
-.mail::before {
+/*.mail::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -75,7 +79,7 @@ main {
     background: url(../images/mail.png) center center no-repeat;
     background-size: cover;
 }
-
+*/
 .contacts {
 	text-align: center;
 }
@@ -89,7 +93,7 @@ a:hover {
 	color: #D19673;
 }
 
-footer {
+footer, header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;

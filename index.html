@@ -4,26 +4,46 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/style.css" >
+	<link rel="stylesheet" href="styles/default.min.css">
+	<script src="highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 	<title>Document</title>
 </head>
 <body>
 	<div class="container">
-		<header>
-			Glad to see you on this page!
-		</header>
+		<div class="header-container">
+			<header>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav>
+					<ul class="nav">
+						<li class="nav-li"><a href="#contacts">contacts</a></li>
+						<li class="nav-li"><a href="#profile">profile</a></li>
+						<li class="nav-li"><a href="#skills">skills</a></li>
+						<li class="nav-li"><a href="#code">code</a></li>
+						<li class="nav-li"><a href="#work">experience</a></li>
+						<li class="nav-li"><a href="#projects">projects</a></li>
+						<li class="nav-li"><a href="#education">education</a></li>
+						<li class="nav-li"><a href="#SelfIntroduction">Self-Introduction</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="main-container">
 	<main>
 		<div class="personal">
 			<section class="name">
 			<img class="foto-img" src="pictures/foto.jpg" alt="foto">
 			<h1 class="title">Kersnovskaia Natalia</h1>
 			</section>
-			<section class="contacts">
+			<section id="contacts" class="contacts">
 				<h2 class="title">contacts</h2>
 				<ul class="mail-ul">
 					<li class="mail">n.kersnovskaia@gmail.com</li>
 				</ul>
 			</section>
-			<section class="profile">
+			<section id="profile" class="profile">
 				<h2 class="title">profile</h2>
 				<p>I’ve always liked math. When the computer science classes started at school, I liked solving problems in Pascal. I entered the university for the specialty Production Automation, which is related to programming.
 				</p>
@@ -34,44 +54,99 @@
 			</section>
 		</div>
 		<div class="technical">
-			<section class="skills">
+			<section id="skills" class="skills">
 				<h2 class="title">skills</h2>
 				<ul>
-					<li>Basics of adaptive markup</li>
+					<li>Basics of HTML</li>
+					<li>Basics of CSS</li>
 					<li>Basics of JavaScript</li>
 					<li>Bootstrap</li>
-					<li>Basics of jQuery</li>
+					<li>Level of English А2</li>
 				</ul>
 			</section>
-			<section class="code">
+			<section id="code" class="code">
 				<h2 class="title">code</h2>
-				<p>var OrderPeople = function(people){ return people.sort( (a, b) => { return a['age'] - b['age']; }) }</p>
+				<pre><code class="language-javascript">
+var OrderPeople = function(people){
+ return people.sort( (a, b) => {
+  return a['age'] - b['age']; 
+ }) 
+}
+</code></pre>
+
 			</section>
-			<section class="work">
-				<h2 class="title">work</h2>
+			<section id="projects" class="projects">
+				<h2 class="title">projects</h2>
+				<div class="projects-list">
+					<article class="projects-item">
+						<a target="_blank" href="http://c91550jw.beget.tech/test2.html">
+							<div class="corner"><img src="images/test.jpg" alt=""> </div>
+							<h3>Test by capitals</h3>
+							<p>Test for knowledge of the capitals of the world. Shows the percent of correct answers.</p>
+						</a>
+					</article>
+					<article class="projects-item">
+						<a target="_blank" href="http://c91550jw.beget.tech/weather-JS-master/weatherJSwork.html">
+							<div class="corner"><img src="images/widget.jpg" alt=""></div>
+							<h3>Weather widget</h3>
+							<p>The widget shows the weather in the selected cities. There are hidden "Add" and "Delete" buttons in the lower right corner to add and remove cities.</p>
+						</a>
+					</article>
+					<article class="projects-item">
+						<a target="_blank" href="http://c91550jw.beget.tech/search/index.html">
+							<div class="corner"><img src="images/search.jpg" alt=""></div>
+							<h3>Movie search</h3>
+							<p>Application for searching movies using API. The search finds a list of movies and TV shows by title and gives complete information about the first movie found.</p>
+						</a>
+					</article>
+				</div>
+			</section>
+			<section id="work" class="work">
+				<h2 class="title">experience</h2>
 				<ul>
 					<li>Interactive courses in HTML, CSS, JavaScript <a href="www.htmlacademy.ru">Htmlacademy</a></li>
 					<li>JavaScript for beginners <a href="www.stepik.org">Stepik</a></li>
 					<li>Introduction to jQuery <a href="www.codecademy.com">Codecademy</a></li>
 				</ul>
 			</section>
-			<section class="education">
+			<section id="education" class="education">
 				<h2 class="title">education</h2>
 				<div>Higher education “Automation of technological processes and production”</div>
 				<div>Higher education “Anti-crisis management”</div>
 			</section>
-			<section class="languages">
-				<h2 class="title">languages</h2>
-				<p>Level of English А2</p>	
+			<section id="SelfIntroduction" class="SelfIntroduction">
+				<h2 class="title">Self-Introduction</h2>
+				<video src="video_2021-09-19_15-08-14.mp4" controls></video>	
 			</section>	
 		</div>
 	</main>	
-			<footer>
-			<a href="https://github.com/natakers">My Git</a>
-			<time>2021</time>
-			<img class="rs" src="images/rs_school_js.svg" alt="rs_school">
-			<a href="https://rs.school/js/">RS School</a>
+	</div>
+	<div class="footer-container">
+		<footer>
+			<a class="footer-item" href="https://github.com/natakers">My Git</a>
+			<time class="footer-item">2021</time>
+			<a class="footer-item" href="https://rs.school/js/"><img class="rs" src="images/rs_school_js.svg" alt="rs_school"></a>
 		</footer>
 		</div>
+		</div>
+
+		<script>
+
+			const burger = document.querySelector(".header__burger");
+			const nav = document.querySelector('nav');
+			const navLi = document.querySelectorAll('.nav-li');
+
+			burger.addEventListener('click', event => {
+				burger.classList.toggle("active");
+				nav.classList.toggle("active");
+			});
+			navLi.forEach(item => {
+				item.addEventListener('click', event => {
+				nav.classList.remove("active");
+				burger.classList.remove("active");
+			});
+			})
+			console.log('Баллы 150/160\n\nвёрстка валидная +10\n\nвёрстка семантическая +20\n\nВ коде страницы присутствуют семантические теги HTML5 и заголовки: article, footer, header, main, nav, section, time, h1, h2, h3. спользуются заголовки h1-h6. Заголовок h1 только один.\n\nдля оформления СV используются css-стили +10\n\nконтент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10\n\nвёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10\n\nесть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. +10\n\nна странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10\nконтакты для связи и перечень навыков оформлены в виде списка ul > li +10\n\nCV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10\n\nCV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода +10\n\nCV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10\n\nCV выполнено на английском языке +10\n\nвыполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10\n\nесть видеорезюме автора CV на английском языке. +0\n\nдизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10')
+		</script>
 </body>
 </html>

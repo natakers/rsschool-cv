@@ -197,6 +197,13 @@ nav, .nav {
  }
 
 
+video {
+  width: 100%;
+    height: auto;
+    margin: 0 auto; // выравнивает по центру по вертикали
+    display: block;
+    /*max-width: 500px;*/
+}
 
   
 
@@ -335,11 +342,11 @@ nav, .nav {
 
   @media screen and (max-width: 320px) {
     footer, main, header {
-      width: 300px;
+      width: 320px;
       flex-direction: column;
     }
     pre, .nav  {
-      max-width: 300px;
+      max-width: 320px;
       /*flex-direction: column;*/
     }
 
